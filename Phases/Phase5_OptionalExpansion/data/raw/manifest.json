@@ -1,0 +1,108 @@
+{
+  "phase": 5,
+  "trigger_gaps": [
+    "Q1 why add to wishlist",
+    "Q8 wishlist as intent vs bookmark"
+  ],
+  "pulled_at": "2026-08-31T06:23:49Z",
+  "queries": [
+    {
+      "id": "wl_myntra",
+      "query": "myntra wishlist",
+      "questions": [
+        1,
+        8
+      ],
+      "brand_required": true
+    },
+    {
+      "id": "wl_limit",
+      "query": "wishlist limit",
+      "questions": [
+        1,
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_full",
+      "query": "wishlist full",
+      "questions": [
+        1,
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_cap",
+      "query": "wishlist cap",
+      "questions": [
+        1,
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_added",
+      "query": "added to wishlist",
+      "questions": [
+        1,
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_save_later",
+      "query": "save for later",
+      "questions": [
+        1,
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_clear",
+      "query": "clear wishlist",
+      "questions": [
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_never_buy",
+      "query": "wishlist never buy",
+      "questions": [
+        2,
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_sale_watch",
+      "query": "wishlist wait for sale",
+      "questions": [
+        4,
+        8
+      ],
+      "brand_required": false
+    },
+    {
+      "id": "wl_bookmark",
+      "query": "wishlist bookmark shopping",
+      "questions": [
+        1,
+        8
+      ],
+      "brand_required": false
+    }
+  ],
+  "documents": 258,
+  "by_source": {
+    "reddit_wishlist_sweep": 258
+  },
+  "skipped": {
+    "youtube": "no YOUTUBE_API_KEY in environment",
+    "communities": "MouthShut / Quora block automated collection; not ingested"
+  },
+  "raw_path": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\data\\raw\\expansion_documents.jsonl"
+}

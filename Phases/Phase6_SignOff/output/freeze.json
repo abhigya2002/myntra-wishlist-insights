@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-08-31T11:40:32Z",
+  "source_phase": 5,
+  "source_report": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\discovery-report.md",
+  "source_ledger": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\evidence-ledger.json",
+  "source_manifest": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\data\\manifest.json",
+  "frozen_report": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\discovery-report.md",
+  "frozen_ledger": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\evidence-ledger.json",
+  "report_sha256": "09084b766afdaaeac6ed3e6b90bda77657ae6c17787c4acec68b369ed5eddfb9",
+  "ledger_sha256": "c153a72a12d4bceaf0ce6b5ff1af13079ee2bc6c0d5655590910a1514afcd5ae",
+  "bytes": {
+    "report": 42749,
+    "ledger": 292518
+  }
+}

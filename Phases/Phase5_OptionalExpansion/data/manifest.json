@@ -1,0 +1,148 @@
+{
+  "phase": 5,
+  "product": "Myntra",
+  "draft": "reddit_primary_store_corroboration_wishlist_expansion",
+  "trigger_gaps": [
+    "Q1 why add to wishlist",
+    "Q8 wishlist as intent vs bookmark"
+  ],
+  "ran_at": "2026-08-31T09:09:12Z",
+  "expansion": {
+    "pulled_at": "2026-08-31T06:23:49Z",
+    "documents": 101,
+    "by_source": {
+      "reddit_wishlist_sweep": 101
+    },
+    "skipped": {
+      "youtube": "no YOUTUBE_API_KEY in environment",
+      "communities": "MouthShut / Quora block automated collection; not ingested"
+    }
+  },
+  "corpus": {
+    "raw_docs": 988,
+    "labeled_docs": 988,
+    "in_scope_docs": 944,
+    "by_label": {
+      "noise": 44,
+      "myntra_primary": 848,
+      "fashion_context": 96
+    },
+    "by_source_docs": {
+      "reddit": 427,
+      "play_store": 143,
+      "app_store": 418
+    },
+    "by_source_claims": {
+      "reddit": 134,
+      "play_store": 55,
+      "app_store": 191
+    },
+    "claims_total": 380,
+    "claims_clustered": 376,
+    "claims_unclustered": 4,
+    "claim_docs": 292,
+    "reddit_claim_count": 134,
+    "store_claim_count": 246,
+    "expansion_claim_count": 0,
+    "phase5_claim_count": 10,
+    "reddit_claim_share": 0.3526,
+    "reddit_share": 0.3526,
+    "wishlist_explicit_claims": 6,
+    "wishlist_implied_claims": 4,
+    "facets": {
+      "archive": 3,
+      "compare_block": 3,
+      "why_add": 2,
+      "intent": 1,
+      "sale_park": 1
+    },
+    "extractor": {
+      "groq": 63,
+      "heuristic": 317
+    },
+    "gate_on_claims": {
+      "myntra_primary": 366,
+      "fashion_context": 14
+    }
+  },
+  "wishlist_evidence": {
+    "claims": 10,
+    "threads": 5,
+    "facets": {
+      "archive": 3,
+      "compare_block": 3,
+      "why_add": 2,
+      "intent": 1,
+      "sale_park": 1
+    },
+    "reading": "Bookmark-style saving outweighs stated intent."
+  },
+  "ranked_areas": 10,
+  "ranking": [
+    {
+      "rank": 1,
+      "id": "quality_uncertainty",
+      "score": 93.572
+    },
+    {
+      "rank": 2,
+      "id": "fit_size_uncertainty",
+      "score": 89.22
+    },
+    {
+      "rank": 3,
+      "id": "returns_and_order_trust",
+      "score": 83.531
+    },
+    {
+      "rank": 4,
+      "id": "review_thinness",
+      "score": 77.6775
+    },
+    {
+      "rank": 5,
+      "id": "wishlist_intent_ambiguity",
+      "score": 75.11
+    },
+    {
+      "rank": 6,
+      "id": "price_watch_and_checkout",
+      "score": 69.9355
+    },
+    {
+      "rank": 7,
+      "id": "off_platform_research",
+      "score": 69.5515
+    },
+    {
+      "rank": 8,
+      "id": "assortment_or_access_gap",
+      "score": 66.798
+    },
+    {
+      "rank": 9,
+      "id": "occasion_and_styling_uncertainty",
+      "score": 63.52
+    },
+    {
+      "rank": 10,
+      "id": "cross_listing_compare",
+      "score": 60.32
+    }
+  ],
+  "question_coverage": {
+    "answered": 6,
+    "partial": 4,
+    "gap": 0,
+    "answered_or_partial": 10,
+    "pass_8_of_10": true,
+    "gaps_named": true
+  },
+  "instant_fail_clear": true,
+  "files": {
+    "report": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\discovery-report.md",
+    "ledger": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\evidence-ledger.json",
+    "raw": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\data\\raw\\expansion_documents.jsonl"
+  },
+  "re_run": "python run.py --no-ingest"
+}

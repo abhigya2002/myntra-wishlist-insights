@@ -1,0 +1,32 @@
+# Secrets — never commit
+.env
+.env.*
+!**/.env.example
+**/.env
+**/groq.local
+**/secrets.toml
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local / large / unrelated to the Streamlit app
+Part 2/
+DOCS/
+agent-transcripts/
+*.zip

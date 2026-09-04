@@ -1,0 +1,127 @@
+{
+  "weights": {
+    "metric_relevance": 0.3,
+    "evidence_strength": 0.25,
+    "delay_dropoff": 0.2,
+    "constraint_fit": 0.15,
+    "segment_honesty": 0.1
+  },
+  "ask": {
+    "metric_relevance": "Does this belong in the 30-day wishlist → purchase window?",
+    "evidence_strength": "Multiple threads, not one viral post?",
+    "delay_dropoff": "Tied to not buying, not just complaining?",
+    "constraint_fit": "Can this matter without paying the user?",
+    "segment_honesty": "Specific only where quotes support it?"
+  },
+  "formula": "score = 100 * (0.30*metric + 0.25*evidence + 0.20*delay + 0.15*constraint + 0.10*segment)",
+  "ranked": [
+    {
+      "rank": 1,
+      "id": "quality_uncertainty",
+      "score": 87.486,
+      "factors": {
+        "metric_relevance": 0.7792,
+        "evidence_strength": 0.837,
+        "delay_dropoff": 0.9259,
+        "constraint_fit": 0.9778,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 2,
+      "id": "review_thinness",
+      "score": 77.0835,
+      "factors": {
+        "metric_relevance": 0.7278,
+        "evidence_strength": 0.8556,
+        "delay_dropoff": 0.4555,
+        "constraint_fit": 0.9833,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 3,
+      "id": "off_platform_research",
+      "score": 72.7715,
+      "factors": {
+        "metric_relevance": 0.6375,
+        "evidence_strength": 0.8125,
+        "delay_dropoff": 0.4167,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 4,
+      "id": "assortment_or_access_gap",
+      "score": 72.558,
+      "factors": {
+        "metric_relevance": 0.39,
+        "evidence_strength": 1.0,
+        "delay_dropoff": 0.5429,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 5,
+      "id": "fit_size_uncertainty",
+      "score": 70.977,
+      "factors": {
+        "metric_relevance": 0.57,
+        "evidence_strength": 0.9062,
+        "delay_dropoff": 0.3111,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 6,
+      "id": "occasion_and_styling_uncertainty",
+      "score": 65.0425,
+      "factors": {
+        "metric_relevance": 0.4875,
+        "evidence_strength": 0.7767,
+        "delay_dropoff": 0.3,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 7,
+      "id": "returns_and_order_trust",
+      "score": 64.524,
+      "factors": {
+        "metric_relevance": 0.3588,
+        "evidence_strength": 0.872,
+        "delay_dropoff": 0.384,
+        "constraint_fit": 0.952,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 8,
+      "id": "price_watch_and_checkout",
+      "score": 58.74,
+      "factors": {
+        "metric_relevance": 0.4756,
+        "evidence_strength": 0.9278,
+        "delay_dropoff": 0.3555,
+        "constraint_fit": 0.2778,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 9,
+      "id": "cross_listing_compare",
+      "score": 55.595,
+      "factors": {
+        "metric_relevance": 0.5525,
+        "evidence_strength": 0.3208,
+        "delay_dropoff": 0.3,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    }
+  ]
+}

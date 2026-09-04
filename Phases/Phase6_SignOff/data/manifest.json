@@ -1,0 +1,58 @@
+{
+  "phase": 6,
+  "product": "Myntra",
+  "ran_at": "2026-08-31T11:40:32Z",
+  "sign_off_clear": true,
+  "source_draft": "phase5_reddit_primary_store_corroboration_wishlist_expansion",
+  "frozen": {
+    "frozen_at": "2026-08-31T11:40:32Z",
+    "source_phase": 5,
+    "source_report": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\discovery-report.md",
+    "source_ledger": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\evidence-ledger.json",
+    "source_manifest": "D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\data\\manifest.json",
+    "frozen_report": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\discovery-report.md",
+    "frozen_ledger": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\evidence-ledger.json",
+    "report_sha256": "09084b766afdaaeac6ed3e6b90bda77657ae6c17787c4acec68b369ed5eddfb9",
+    "ledger_sha256": "c153a72a12d4bceaf0ce6b5ff1af13079ee2bc6c0d5655590910a1514afcd5ae",
+    "bytes": {
+      "report": 42749,
+      "ledger": 292518
+    }
+  },
+  "coverage": {
+    "answered": 6,
+    "partial": 4,
+    "gap": 0,
+    "answered_or_partial": 10,
+    "pass_8_of_10": true,
+    "gaps_named": true
+  },
+  "ranked_areas": 10,
+  "wishlist": {
+    "claims": 10,
+    "threads": 5,
+    "reading": "Bookmark-style saving outweighs stated intent.",
+    "q1": "Partial",
+    "q8": "Partial"
+  },
+  "caveats": [
+    "Q1/Q8 are Partial on a thin wishlist base (10 claims / 5 threads). Direction is evidence-backed; strength is limited because the Phase 5 sweep was truncated.",
+    "4 discovery questions remain Partial (acceptable under evals.md; not silent Gaps).",
+    "Phase 5 standing limitations note a truncated wishlist sweep; re-running Phase 5 with --force can extend the corpus later.",
+    "No internal Myntra wishlist→purchase conversion rate is available. Part 1 ranks opportunity areas from public evidence only."
+  ],
+  "docs_updated": {
+    "architecture": "D:\\Fashion Project\\DOCS\\architecture.md",
+    "implementationplan": "D:\\Fashion Project\\DOCS\\implementationplan.md",
+    "phases_root": "D:\\Fashion Project\\Phases"
+  },
+  "files": {
+    "sign_off": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\data\\eval\\SIGN_OFF.md",
+    "process_evals": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\data\\eval\\PROCESS_EVALS.md",
+    "report": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\discovery-report.md",
+    "ledger": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\evidence-ledger.json",
+    "freeze": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\freeze.json",
+    "handoff": "D:\\Fashion Project\\Phases\\Phase6_SignOff\\output\\PART2_HANDOFF.md"
+  },
+  "re_run": "python run.py"
+}

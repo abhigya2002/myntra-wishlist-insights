@@ -1,0 +1,70 @@
+{"job_id": "wl_myntra__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 3, "kept_posts": 3, "kept_comments": 54}
+{"job_id": "wl_myntra__phase5__indianfashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_myntra__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_myntra__phase5__IndianStreetFashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_myntra__phase5__TwoXIndia__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=TwoXIndia&query=myntra+wishlist&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&limit=25"}
+{"job_id": "wl_myntra__phase5__IndiaShopping__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=IndiaShopping&query=myntra+wishlist&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&limi"}
+{"job_id": "wl_myntra__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_myntra__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_limit__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_limit__phase5__indianfashion__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=indianfashion&query=wishlist+limit&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&limit"}
+{"job_id": "wl_limit__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_limit__phase5__IndianStreetFashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_limit__phase5__TwoXIndia__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_limit__phase5__IndiaShopping__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_limit__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_limit__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_full__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_full__phase5__indianfashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_full__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_full__phase5__IndianStreetFashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_full__phase5__TwoXIndia__submission", "status": "ok", "fetched": 2, "kept_posts": 2, "kept_comments": 28}
+{"job_id": "wl_full__phase5__IndiaShopping__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_full__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_full__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_cap__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_cap__phase5__indianfashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_cap__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_cap__phase5__IndianStreetFashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_cap__phase5__TwoXIndia__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=TwoXIndia&query=wishlist+cap&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&limit=25&so"}
+{"job_id": "wl_cap__phase5__IndiaShopping__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_cap__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_cap__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_added__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_added__phase5__indianfashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_added__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_added__phase5__IndianStreetFashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_added__phase5__TwoXIndia__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_added__phase5__IndiaShopping__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=IndiaShopping&query=added+to+wishlist&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&li"}
+{"job_id": "wl_added__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_added__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_save_later__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 6, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_save_later__phase5__indianfashion__submission", "status": "ok", "fetched": 1, "kept_posts": 1, "kept_comments": 0}
+{"job_id": "wl_save_later__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_save_later__phase5__IndianStreetFashion__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=IndianStreetFashion&query=save+for+later&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00"}
+{"job_id": "wl_save_later__phase5__TwoXIndia__submission", "status": "ok", "fetched": 25, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_save_later__phase5__IndiaShopping__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_save_later__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_save_later__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 4, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_clear__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_clear__phase5__indianfashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_clear__phase5__DesiFashionAdvice__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=DesiFashionAdvice&query=clear+wishlist&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&l"}
+{"job_id": "wl_clear__phase5__IndianStreetFashion__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=IndianStreetFashion&query=clear+wishlist&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00"}
+{"job_id": "wl_clear__phase5__TwoXIndia__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=TwoXIndia&query=clear+wishlist&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&limit=25&"}
+{"job_id": "wl_clear__phase5__IndiaShopping__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=IndiaShopping&query=clear+wishlist&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&limit"}
+{"job_id": "wl_clear__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_clear__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_never_buy__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_never_buy__phase5__indianfashion__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=indianfashion&query=wishlist+never+buy&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&l"}
+{"job_id": "wl_never_buy__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_never_buy__phase5__IndianStreetFashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_never_buy__phase5__TwoXIndia__submission", "status": "ok", "fetched": 2, "kept_posts": 1, "kept_comments": 2}
+{"job_id": "wl_never_buy__phase5__IndiaShopping__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=IndiaShopping&query=wishlist+never+buy&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3A00%3A00&l"}
+{"job_id": "wl_never_buy__phase5__Myntra__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_never_buy__phase5__femalefashionadvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_sale_watch__phase5__IndianFashionAddicts__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_sale_watch__phase5__indianfashion__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_sale_watch__phase5__DesiFashionAdvice__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_sale_watch__phase5__IndianStreetFashion__submission", "status": "error", "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=IndianStreetFashion&query=wishlist+wait+for+sale&after=2024-08-17T00%3A00%3A00&before=2026-08-17T00%3"}
+{"job_id": "wl_sale_watch__phase5__TwoXIndia__submission", "status": "ok", "fetched": 0, "kept_posts": 0, "kept_comments": 0}
+{"job_id": "wl_sale_watch__phase5__IndiaShopping__submission", "status": "ok", "fetched": 1, "kept_posts": 1, "kept_comments": 0}

@@ -1,0 +1,79 @@
+{
+  "claims": 10,
+  "threads": 5,
+  "docs": 8,
+  "facets": {
+    "archive": 3,
+    "compare_block": 3,
+    "why_add": 2,
+    "intent": 1,
+    "sale_park": 1
+  },
+  "bookmark_share_of_decided": 0.75,
+  "intent_share_of_decided": 0.25,
+  "ceiling_claims": 0,
+  "reading": "Bookmark-style saving outweighs stated intent.",
+  "not_established": "This does not establish that removing a saved-item ceiling would increase purchases. Volume of saves and conversion of saves are different quantities, and nothing in this corpus links them.",
+  "samples": {
+    "archive": [
+      {
+        "quote": "people actually buy clothes for their real life anymore or just for the vibe? I was cleaning my wishlist yesterday and realised half the clothes I save are not for anything I actually have planned like I’ll see a cute top or a dress on Savana or myntra and immediately think “this would be nice for a cafe day” or “this would look good on a trip” but then my week",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1umsu9n/do_people_actually_buy_clothes_for_their_real/",
+        "claim_id": "t3_1umsu9n__p5c1"
+      },
+      {
+        "quote": "or dress. Girlies, please share me the pics of your recent favourites or something from your wishlist. I’ve tried searching in myntra and I didn’t find anything that suits me. Thank you all in advance",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1usv248/want_recommendations_for_a_dress_to_wear_on_my/",
+        "claim_id": "t3_1usv248__p5c1"
+      },
+      {
+        "quote": "This is so true i find myself making wishlist ls based on future versions",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1umsu9n/do_people_actually_buy_clothes_for_their_real/ovetiss/",
+        "claim_id": "t1_ovetiss__p5c1"
+      }
+    ],
+    "compare_block": [
+      {
+        "quote": "read this post❤️ I was insecure in my early 20s. I had low confidence, and people's opinions affected me a lot, especially because I prioritized my career over marriage. I cared about what men thought of modest girls vs bold girls. I tried to fit into the image of a traditional girl because I thought that's what true femininity was, just like some",
+        "url": "https://www.reddit.com/r/TwoXIndia/comments/1ulcp53/i_turned_30_i_feel_more_alive_than_before_every/",
+        "claim_id": "t3_1ulcp53__p5c1"
+      },
+      {
+        "quote": "Want recommendations for a dress to wear on my graduation I’m 23F, a medical student graduating soon. I need help figuring out what to wear. I wanna wear somet sparkly, shiny, preferably a gown or dress. Girlies, please share me the pics of your recent favourites or something",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1usv248/want_recommendations_for_a_dress_to_wear_on_my/",
+        "claim_id": "t3_1usv248__p5c2"
+      },
+      {
+        "quote": "Hey thanks. She's yet to see them, so let's see which ones she decides to return/exchange.",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1j4q1sg/a_small_gift_for_my_girlfriend/mghurvj/",
+        "claim_id": "t1_mghurvj__p5c1"
+      }
+    ],
+    "intent": [
+      {
+        "quote": "of surprising her with these. Not to worry, these were pre-approved by her and taken from her wishlist. She just doesn't know I got them. Just wanted to share a little update. Have a nice day.",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1j4q1sg/a_small_gift_for_my_girlfriend/",
+        "claim_id": "t3_1j4q1sg__p5c1"
+      }
+    ],
+    "sale_park": [
+      {
+        "quote": "Prices on wishlisted items drop significantly during sales. Platforms also send you price drop notifications — basically free savings alerts delivered to you. 5. **SHOP DURING THE RIGHT SALES:** Not all sales are equal. The ones that actually give real discounts: ▸ Amazon Great Indian Festival ▸ Flipkart Big Billion Days ▸ Myntra End of Season Sale ▸",
+        "url": "https://www.reddit.com/r/Indiashopping/comments/1u2rq0a/top_10_genuine_ways_to_save_money_while_shopping/",
+        "claim_id": "t3_1u2rq0a__p5c1"
+      }
+    ],
+    "why_add": [
+      {
+        "quote": "surprising her with these. Not to worry, these were pre-approved by her and taken from her wishlist. She just doesn't know I got them. Just wanted to share a little update. Have a nice day.",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1j4q1sg/a_small_gift_for_my_girlfriend/",
+        "claim_id": "t3_1j4q1sg__p5c2"
+      },
+      {
+        "quote": "Which app do you use to wishlist stuff?",
+        "url": "https://www.reddit.com/r/IndianFashionAddicts/comments/1umsu9n/do_people_actually_buy_clothes_for_their_real/ovhdohk/",
+        "claim_id": "t1_ovhdohk__p5c1"
+      }
+    ]
+  }
+}

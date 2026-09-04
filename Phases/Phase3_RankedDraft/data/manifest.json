@@ -1,0 +1,110 @@
+{
+  "phase": 3,
+  "product": "Myntra",
+  "draft": "reddit_only",
+  "ran_at": "2026-08-29T17:52:11Z",
+  "inputs": {
+    "raw": "D:\\Fashion Project\\Phases\\Phase1_RedditIngest\\data\\raw\\reddit_documents.jsonl",
+    "labeled": "D:\\Fashion Project\\Phases\\Phase2_RelevanceAndExtraction\\data\\labeled\\reddit_labeled.jsonl",
+    "claims": "D:\\Fashion Project\\Phases\\Phase2_RelevanceAndExtraction\\data\\claims\\reddit_claims.jsonl"
+  },
+  "corpus": {
+    "raw_docs": 326,
+    "labeled_docs": 326,
+    "in_scope_docs": 291,
+    "by_label": {
+      "noise": 35,
+      "myntra_primary": 281,
+      "fashion_context": 10
+    },
+    "by_source": {
+      "reddit": 326
+    },
+    "claims_total": 124,
+    "claims_clustered": 120,
+    "claims_unclustered": 4,
+    "claim_docs": 91,
+    "reddit_share": 1.0,
+    "wishlist_explicit_claims": 0,
+    "wishlist_implied_claims": 0,
+    "extractor": {
+      "groq": 63,
+      "heuristic": 61
+    },
+    "gate_on_claims": {
+      "myntra_primary": 114,
+      "fashion_context": 10
+    }
+  },
+  "ranked_areas": 9,
+  "ranking": [
+    {
+      "rank": 1,
+      "id": "quality_uncertainty",
+      "score": 87.486
+    },
+    {
+      "rank": 2,
+      "id": "review_thinness",
+      "score": 77.0835
+    },
+    {
+      "rank": 3,
+      "id": "off_platform_research",
+      "score": 72.7715
+    },
+    {
+      "rank": 4,
+      "id": "assortment_or_access_gap",
+      "score": 72.558
+    },
+    {
+      "rank": 5,
+      "id": "fit_size_uncertainty",
+      "score": 70.977
+    },
+    {
+      "rank": 6,
+      "id": "occasion_and_styling_uncertainty",
+      "score": 65.0425
+    },
+    {
+      "rank": 7,
+      "id": "returns_and_order_trust",
+      "score": 64.524
+    },
+    {
+      "rank": 8,
+      "id": "price_watch_and_checkout",
+      "score": 58.74
+    },
+    {
+      "rank": 9,
+      "id": "cross_listing_compare",
+      "score": 55.595
+    }
+  ],
+  "question_coverage": {
+    "answered": 6,
+    "partial": 2,
+    "gap": 2,
+    "answered_or_partial": 8,
+    "pass_8_of_10": true,
+    "gaps_named": true
+  },
+  "instant_fail_clear": true,
+  "groundedness": {
+    "checked": 20,
+    "verbatim_pct": 1.0,
+    "pass": true
+  },
+  "files": {
+    "report": "D:\\Fashion Project\\Phases\\Phase3_RankedDraft\\output\\discovery-report.md",
+    "ledger": "D:\\Fashion Project\\Phases\\Phase3_RankedDraft\\output\\evidence-ledger.json",
+    "clusters": "D:\\Fashion Project\\Phases\\Phase3_RankedDraft\\data\\derived\\clusters.jsonl",
+    "ranking": "D:\\Fashion Project\\Phases\\Phase3_RankedDraft\\data\\derived\\ranking.json",
+    "instant_fail": "D:\\Fashion Project\\Phases\\Phase3_RankedDraft\\data\\eval\\INSTANT_FAIL.md",
+    "groundedness": "D:\\Fashion Project\\Phases\\Phase3_RankedDraft\\data\\eval\\GROUNDEDNESS.md"
+  },
+  "re_run": "python run.py"
+}

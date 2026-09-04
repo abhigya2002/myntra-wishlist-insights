@@ -1,0 +1,46 @@
+{
+  "phase": 2,
+  "product": "Myntra",
+  "llm": "groq",
+  "groq": true,
+  "groq_key": "set",
+  "model": "llama-3.3-70b-versatile",
+  "ran_at": "2026-08-29T11:35:09Z",
+  "input_corpus": "D:\\Fashion Project\\Phases\\Phase1_RedditIngest\\data\\raw\\reddit_documents.jsonl",
+  "docs_labeled": 326,
+  "by_label": {
+    "noise": 35,
+    "myntra_primary": 281,
+    "fashion_context": 10
+  },
+  "claims": 124,
+  "claims_quote_verified": 124,
+  "gate_sample_n": 15,
+  "gate_sample_checked": true,
+  "claims_by_question": {
+    "1": 1,
+    "2": 66,
+    "3": 61,
+    "4": 24,
+    "5": 3,
+    "6": 20,
+    "7": 53,
+    "8": 1,
+    "9": 10,
+    "10": 20
+  },
+  "stats": {
+    "docs": 326,
+    "llm_calls": 101,
+    "llm_errors": 23,
+    "claims_kept": 124,
+    "claims_dropped_unverified": 0
+  },
+  "files": {
+    "labeled": "D:\\Fashion Project\\Phases\\Phase2_RelevanceAndExtraction\\data\\labeled\\reddit_labeled.jsonl",
+    "claims": "D:\\Fashion Project\\Phases\\Phase2_RelevanceAndExtraction\\data\\claims\\reddit_claims.jsonl",
+    "gate_sample": "D:\\Fashion Project\\Phases\\Phase2_RelevanceAndExtraction\\data\\eval\\gate_sample.jsonl",
+    "eval_notes": "D:\\Fashion Project\\Phases\\Phase2_RelevanceAndExtraction\\data\\eval\\GATE_CHECK.md"
+  },
+  "re_run": "python run.py"
+}

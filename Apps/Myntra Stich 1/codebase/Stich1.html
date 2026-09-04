@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=inter:wght@100..900&amp;family=montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-fixed": "#ffe177",
+          "on-tertiary": "#ffffff",
+          "surface-tint": "#bd0043",
+          "surface-bright": "#fbf8ff",
+          "secondary-container": "#ff7438",
+          "inverse-primary": "#ffb2ba",
+          "on-primary-container": "#fffbff",
+          "on-error-container": "#93000a",
+          "inverse-on-surface": "#efefff",
+          "tertiary": "#715d00",
+          "surface-dim": "#d6d8f2",
+          "outline-variant": "#e4bdc0",
+          "on-tertiary-container": "#4c3e00",
+          "on-background": "#161b2d",
+          "on-secondary-container": "#621f00",
+          "on-surface-variant": "#5b4042",
+          "on-tertiary-fixed-variant": "#554500",
+          "tertiary-container": "#cba800",
+          "on-secondary": "#ffffff",
+          "inverse-surface": "#2b2f43",
+          "primary-container": "#df2357",
+          "on-surface": "#161b2d",
+          "surface-container-high": "#e4e7ff",
+          "surface": "#fbf8ff",
+          "surface-container-low": "#f3f2ff",
+          "secondary": "#a73a00",
+          "surface-container-highest": "#dee1fa",
+          "on-primary-fixed-variant": "#910031",
+          "surface-variant": "#dee1fa",
+          "secondary-fixed-dim": "#ffb599",
+          "on-tertiary-fixed": "#231b00",
+          "error": "#ba1a1a",
+          "surface-container": "#ececff",
+          "primary": "#b90041",
+          "on-primary": "#ffffff",
+          "secondary-fixed": "#ffdbce",
+          "tertiary-fixed-dim": "#ebc300",
+          "primary-fixed": "#ffd9dc",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed-variant": "#7f2b00",
+          "background": "#fbf8ff",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+          "on-primary-fixed": "#400011",
+          "on-secondary-fixed": "#370e00",
+          "primary-fixed-dim": "#ffb2ba",
+          "outline": "#8f6f72"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter-desktop": "1.5rem",
+          "gutter-mobile": "0.75rem",
+          "space-xs": "0.5rem",
+          "layout-margin-desktop": "2.5rem",
+          "space-2xs": "0.25rem",
+          "space-md": "1rem",
+          "space-2xl": "3rem",
+          "layout-margin-tablet": "1.5rem",
+          "space-sm": "0.75rem",
+          "layout-margin-mobile": "1rem",
+          "space-xl": "2rem",
+          "space-lg": "1.5rem",
+          "space-3xl": "4rem"
+        },
+        "fontFamily": {
+          "headline-md": ["montserrat"],
+          "label-sm": ["montserrat"],
+          "label-caps": ["montserrat"],
+          "body-md": ["inter"],
+          "body-lg": ["inter"],
+          "display-lg-mobile": ["montserrat"],
+          "display-lg": ["montserrat"],
+          "headline-sm": ["montserrat"],
+          "headline-lg": ["montserrat"],
+          "body-sm": ["inter"],
+          "label-md": ["montserrat"]
+        },
+        "fontSize": {
+          "headline-md": ["22px", {"lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "label-sm": ["11px", {"lineHeight": "16px", "fontWeight": "600"}],
+          "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+          "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+          "display-lg-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "headline-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "label-md": ["13px", {"lineHeight": "18px", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/><style id="inter-font-override">* { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important; } .material-symbols-outlined { font-family: 'Material Symbols Outlined' !important; }</style></head><body class="bg-background font-body-md text-on-surface min-h-screen antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-[#EAEAEC]"><div class="h-16 w-full px-layout-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Myntra M Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XCSiZo_kfy8WLfoDeox2uK2mEywd9IMfZewlajrpvcLiq4-GW4bHfdopHD8fSz7g_j4ZXs0QIi49iems1kA7Afh87ENDIAqbXqRHTDYNRMnv7jHXCEdpRlwVAozcmYISG9c1Nc1StYg_zxIETJsK4DeSxGSG4f-w0yqr2zLIDLgCz1lOFaa_J6yl_XQBY-NkW0t-TRi-ZHo4y_ejP5c8TM3VYwPgsoCT20amUYAgrhj38mh9hDLonEFhc"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-[#282C3F] tracking-tight">Wishlist Insights</span><span class="font-label-sm text-label-sm text-on-surface-variant">Internal · Public-signal discovery</span></div></div><nav class="flex items-center gap-space-xl h-full" data-active-classes="text-primary border-b-2 border-primary font-bold"><a class="font-label-caps text-label-caps h-full flex items-center text-on-surface-variant hover:text-on-surface transition-colors tracking-wider px-space-xs" data-path="ask" href="#">ASK</a><a aria-current="page" class="h-full flex items-center transition-colors tracking-wider px-space-xs text-primary border-b-2 border-primary font-bold" data-path="pulse" href="#">PULSE</a></nav><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs"><div class="flex items-center gap-space-2xs bg-surface-container-low px-space-sm py-space-2xs rounded-full border border-outline-variant/40"><span class="w-2 h-2 rounded-full bg-[#10B981]"></span><span class="font-label-sm text-label-sm text-on-surface">Corpus ready</span></div><div class="flex items-center gap-space-2xs bg-surface-container-lowest px-space-sm py-space-2xs rounded-full border border-outline-variant/40"><span class="font-label-sm text-label-sm text-on-surface-variant">Groq connected</span></div></div><div class="h-6 w-[1px] bg-outline-variant/50 hidden md:block"></div><a class="flex items-center justify-center p-space-xs text-on-surface-variant hover:text-primary transition-colors" data-path="settings-and-index" href="#" title="Settings &amp; Index Controls"><span class="material-symbols-outlined text-[20px]">tune</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-[#EAEAEC] z-40 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Workspaces</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-surface-container text-primary font-bold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="ask" href="#"><span class="material-symbols-outlined text-[18px]">chat_bubble</span>RAG Studio</a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded transition-colors bg-surface-container text-primary font-bold" data-path="pulse" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span>Telemetry Pulse</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="sku-deep-dive" href="#"><span class="material-symbols-outlined text-[18px]">category</span>SKU Inspector</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="settings-and-index" href="#"><span class="material-symbols-outlined text-[18px]">settings</span>Index &amp; Controls</a></nav></div><div class="px-space-md py-space-sm bg-surface-container-low/60 mx-space-sm rounded border border-outline-variant/30 flex flex-col gap-space-2xs"><span class="font-label-caps text-label-caps text-on-surface-variant">Retrieval Stream</span><span class="font-body-sm text-body-sm text-on-surface font-medium">Public Wishlists (24h)</span><div class="flex items-center gap-space-2xs mt-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2-qwen-groq</span></div></div></aside><div class="pl-64"><main class="w-full pt-16 min-h-[calc(100vh-4rem)] bg-background"><div class="flex flex-col w-full">
+<div class="max-w-5xl mx-auto w-full px-layout-margin-tablet lg:px-layout-margin-desktop py-space-xl">
+<!-- Executive Header Bar -->
+<header class="flex flex-col md:flex-row md:items-start justify-between pb-space-lg gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs mb-space-2xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider bg-secondary-fixed/50 px-space-xs py-0.5 rounded">Executive Intelligence</span>
+<span class="text-outline-variant font-label-caps text-label-caps">/</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold uppercase">Merchandising &amp; Growth</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+          Wishlist Behaviour Executive Pulse — Q2 Synthesis
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Public-signal blockers · No invented conversion % · Period: May 1 – June 15
+        </p>
+</div>
+<div class="flex items-center gap-space-xs self-start md:self-auto shrink-0 pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" id="regen-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" id="regen-icon">refresh</span>
+<span>Regenerate Pulse</span>
+</button>
+<button class="flex items-center gap-space-xs bg-inverse-surface text-inverse-on-surface hover:bg-on-surface px-space-md py-space-xs rounded-full font-label-md text-label-md shadow-sm transition-all" id="download-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download .md</span>
+</button>
+</div>
+</header>
+<!-- Document Meta Ribbon -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-wrap items-center justify-between gap-space-md mb-space-2xl">
+<div class="flex items-center gap-space-lg flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Model: <strong class="text-on-surface font-semibold">v4.2-qwen-groq</strong></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">dataset</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sample Size: <strong class="text-on-surface font-semibold">14,820 Customer Telemetry Logs</strong></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Generated: <strong class="text-on-surface font-semibold">Today at 08:30 IST</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="bg-primary/10 text-primary px-space-xs py-0.5 rounded-full font-label-sm text-label-sm font-semibold">High Confidence Consensus</span>
+</div>
+</div>
+<!-- Section 1: Executive Key Findings -->
+<section class="mb-space-2xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-1.5 h-6 rounded-full bg-gradient-to-b from-primary to-secondary"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Executive Key Findings
+          </h2>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Telemetry Aggregation</span>
+</div>
+<!-- Metric Tiles Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg">
+<!-- Tile 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Wishlist Attrition</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">hourglass_top</span>
+</div>
+<div class="flex flex-col gap-space-2xs mb-space-xs">
+<span class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">62.4%</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Stagnation Rate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Items parked &gt;45 days without subsequent add-to-bag or bag checkout actions across Tier-1/2 metros.
+          </p>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-error">trending_up</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+4.1% MoM vs Q1 Baseline</span>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Discount Elasticity</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">notifications_active</span>
+</div>
+<div class="flex flex-col gap-space-2xs mb-space-xs">
+<span class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">4.2x</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Price Alert Sensitivity</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Cart transfer velocity spike observed whenever an automated ≥25% markdown signal is delivered.
+          </p>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">flash_on</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub-30m conversion window</span>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Qualitative Block</span>
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col gap-space-2xs mb-space-xs">
+<span class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">38%</span>
+<span class="font-label-md text-label-md text-error font-semibold">Sizing / Drape Blocker</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Primary vocalized hesitation in customer signals, outperforming fabric composition doubts.
+          </p>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-error">report_problem</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Highest in Western Wear &amp; Kurtas</span>
+</div>
+</div>
+</div>
+<!-- Quick Executive Snapshot Banner -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">lightbulb</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-primary">Chief Observation:</strong> Customers treat the Wishlist as a <em>"holding pen for clearance triggers"</em> rather than an active curation board, dampening full-price GMV realisation.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-auto">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase">Impact Index:</span>
+<span class="bg-error-container text-on-error-container px-space-xs py-0.5 rounded font-label-caps text-label-caps">High Risk</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Blocker Facets & Channel Distribution -->
+<section class="mb-space-2xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-1.5 h-6 rounded-full bg-secondary"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Dominant Blocker Taxonomy
+          </h2>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Public Signals &amp; Semantic Cluster</span>
+</div>
+<!-- Structured Corporate Reporting Data Table -->
+<div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps tracking-wider">
+<th class="py-space-sm px-space-md font-bold">Facet Name</th>
+<th class="py-space-sm px-space-md font-bold text-right">Channel Mentions</th>
+<th class="py-space-sm px-space-md font-bold">Primary Evidence Signal</th>
+<th class="py-space-sm px-space-md font-bold">Risk Level</th>
+<th class="py-space-sm px-space-md font-bold">Recommended Product Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-space-md px-space-md font-semibold text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Price-Floor Waiting</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-headline-sm text-headline-sm font-bold text-right text-on-surface">
+                  4,210
+                </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+<div class="flex flex-wrap gap-space-2xs">
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Reddit</span>
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Twitter (X)</span>
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Reviews</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-error/10 text-error font-label-caps text-label-caps px-space-xs py-0.5 rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    High
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md font-medium text-secondary">Dynamic bundled discount nudges</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Prompt: "Unlock ₹300 off if bundled with cart"</p>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-space-md px-space-md font-semibold text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Fabric &amp; Drape Uncertainty</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-headline-sm text-headline-sm font-bold text-right text-on-surface">
+                  3,490
+                </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+<div class="flex flex-wrap gap-space-2xs">
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Customer Reviews</span>
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Q&amp;A Thread</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-error/10 text-error font-label-caps text-label-caps px-space-xs py-0.5 rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    High
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md font-medium text-primary">15s UGC video reels on PDP</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Integrate movement clips highlighting drape &amp; hand-feel</p>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-space-md px-space-md font-semibold text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Styling Coordination Delay</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-headline-sm text-headline-sm font-bold text-right text-on-surface">
+                  1,820
+                </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+<div class="flex flex-wrap gap-space-2xs">
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Public Boards</span>
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">IG Comments</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps px-space-xs py-0.5 rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Medium
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md font-medium text-on-surface">"Complete the Look" 1-click carting</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Display pairing shoes/bottoms straight in wishlist modal</p>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-space-md px-space-md font-semibold text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Sizing &amp; Return Friction</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-headline-sm text-headline-sm font-bold text-right text-on-surface">
+                  1,430
+                </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+<div class="flex flex-wrap gap-space-2xs">
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Return Sentiment</span>
+<span class="bg-surface-container px-space-xs py-0.5 rounded font-label-sm text-label-sm">Returns Desk</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps px-space-xs py-0.5 rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Medium
+                  </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md font-medium text-on-surface">Smart fit recommender badge</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">"Your past purchases suggest Size M is optimal"</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Visual Evidence Artifact (2 Images with Rich Prompts) -->
+<section class="mb-space-2xl grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Evidence Sample · UGC Video Hook</span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant px-space-xs py-0.5 rounded">PDP Experiment</span>
+</div>
+<div class="w-full h-48 rounded overflow-hidden relative mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Close-up editorial studio photography of a contemporary silk-chiffon dress showing intricate fabric texture, natural drape, and physical weight on an Indian fashion model against an architectural warm-terracotta background with soft directional natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFy--Pp6cjAGczLqK3o0-BVxXj4bcjovObV81bG2U6nxvvmziSc5eik074041XGQ8SYv8q4qwInx_ApLAxIctGf2pivrGW038BVi7n8vZTsZ-uGpulg8YItMcE7rWEVAm9YhifcNrNONlxziiPXX2FE2mmGwoVLNe72Ga1D-gO5QVjOUwwAa78jCTq-VQXggtNTCjV_8aIVtBLTOCwBXbmUhByWQQhpyDV0FCgV6AmWG7bKDtTplcR"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Live PDP validation test: Interactive drape clips resulted in a <strong>24.6% reduction</strong> in 30-day wishlist stagnation for Indian ethnic apparel.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Visual Merchandising · Look Pairing</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-space-xs py-0.5 rounded">Prototype A/B</span>
+</div>
+<div class="w-full h-48 rounded overflow-hidden relative mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="High-end catalog flat-lay arrangement of contemporary summer resort-wear including linen trousers, woven slides, and structured shoulder bag arranged neatly on an off-white stone plinth under crisp studio lighting with subtle warm shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIN7c024phGbDsG79RQMaeOW22mTqfyYf1vx64iRqFuLzyLgg6LL8h0pg8ps9l72LYPudy6aeK-oUYe8ORYdJJuTORsW9puPAZ5SJBKPFX7ZiI6xvhqQqMUy89bno3hPa7GYIsw1x4sgn7UDJxdQHVyXTovO5G_7wfmJktPcRHyfA8_9LF_di5ZKdc9gOijutyTXJ7mGRQCaEoN3iehOLyQgXaB4w15KcUR5EGxInsrNCTrb7dNH3h"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Complete-the-look bundles in user wishlists triggered <strong>+18.2% simultaneous multi-item carts</strong> over passive single-item saves.
+        </p>
+</div>
+</section>
+<!-- Section 3: Strategic Takeaways for Senior Product Leadership -->
+<section class="mb-space-2xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-1.5 h-6 rounded-full bg-primary"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Management Synthesis &amp; Next Bets
+          </h2>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Q3 Merchandising Roadmap</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Strategic Note 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col md:flex-row gap-space-md items-start">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shrink-0 font-bold">
+            1
+          </div>
+<div class="flex flex-col gap-space-xs flex-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+              Redesign Wishlist from a Graveyard to an Active Staging Canvas
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Introduce intuitive grouping tags (e.g., <span class="text-on-surface font-semibold bg-surface-container px-space-xs py-0.5 rounded">"Festive Wedding"</span>, <span class="text-on-surface font-semibold bg-surface-container px-space-xs py-0.5 rounded">"Casual Summer"</span>, <span class="text-on-surface font-semibold bg-surface-container px-space-xs py-0.5 rounded">"Office Rotation"</span>) to cleanly separate passive bookmarks from high-intent purchase pipelines.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded mt-space-xs flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">
+<strong>Target KPI:</strong> Lift Active-to-Cart velocity by 19% without initiating margin-diluting discount alerts.
+              </span>
+</div>
+</div>
+</div>
+<!-- Strategic Note 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col md:flex-row gap-space-md items-start">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-sm text-headline-sm shrink-0 font-bold">
+            2
+          </div>
+<div class="flex flex-col gap-space-xs flex-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+              Address the Fabric Transparency Gap
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Post-delivery returns and prolonged wishlist drop-offs share identical customer sentiment around fabric touch, stretch coefficient, and real-life drape. High-intent users linger on wishlists because static studio imagery fails to convey material weight.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded mt-space-xs flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">play_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">
+<strong>Action:</strong> Mandate brand partner video feeds for all top 500 wishlisted SKUs before End-of-Season Sale (EOSS).
+              </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Sign-off & Document Footer -->
+<footer class="pt-space-lg pb-space-2xl flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Report generated via <strong>Groq RAG indexer</strong> · <strong>14,820</strong> public observations processed</span>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">share</span> Share via Slack
+        </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">print</span> Print Brief
+        </a>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  (function() {
+    // Regenerate Pulse Animation Micro-interaction
+    const regenBtn = document.getElementById('regen-btn');
+    const regenIcon = document.getElementById('regen-icon');
+    
+    if (regenBtn && regenIcon) {
+      regenBtn.addEventListener('click', function() {
+        regenIcon.classList.add('animate-spin');
+        regenBtn.setAttribute('disabled', 'true');
+        regenBtn.classList.add('opacity-70');
+        
+        setTimeout(() => {
+          regenIcon.classList.remove('animate-spin');
+          regenBtn.removeAttribute('disabled');
+          regenBtn.classList.remove('opacity-70');
+        }, 1200);
+      });
+    }
+
+    // Markdown Download Trigger
+    const downloadBtn = document.getElementById('download-btn');
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', function() {
+        const mdContent = `# Wishlist Behaviour Executive Pulse — Q2 Synthesis
+Generated: Today at 08:30 IST
+Model: v4.2-qwen-groq
+Sample: 14,820 Customer Telemetry Logs
+
+## Key Metrics
+- Stagnation Rate: 62.4% (Items parked >45 days)
+- Price Alert Sensitivity: 4.2x (Spike at >=25% markdown)
+- Sizing / Drape Blocker: 38% (Primary vocalized hesitation)
+
+## Dominant Blocker Taxonomy
+1. Price-Floor Waiting (4,210 mentions) - Risk: High - Dynamic bundled discount nudges
+2. Fabric & Drape Uncertainty (3,490 mentions) - Risk: High - 15s UGC video reels on PDP
+3. Styling Coordination Delay (1,820 mentions) - Risk: Medium - "Complete the Look" 1-click carting
+4. Sizing & Return Friction (1,430 mentions) - Risk: Medium - Smart fit recommender badge
+
+## Management Synthesis
+1. Redesign Wishlist from a Graveyard to an Active Staging Canvas
+2. Address the Fabric Transparency Gap
+`;
+        const blob = new Blob([mdContent], { type: 'text/markdown' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'wishlist-executive-pulse-q2.md';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+    }
+  })();
+</script></main></div></body></html>

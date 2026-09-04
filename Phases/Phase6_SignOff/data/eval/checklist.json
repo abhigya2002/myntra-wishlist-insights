@@ -1,0 +1,114 @@
+{
+  "sign_off_clear": true,
+  "checklist": [
+    {
+      "name": "Instant-fail table is all clear",
+      "pass": true,
+      "note": "Phase 5 instant_fail_clear=True; INSTANT_FAIL.md=CLEAR",
+      "required": true
+    },
+    {
+      "name": "Question coverage ≥ 8/10 Answered or Partial; Gaps named",
+      "pass": true,
+      "note": "answered_or_partial=10/10 gaps=0 gaps_named=True",
+      "required": true
+    },
+    {
+      "name": "Reddit is the primary evidence base",
+      "pass": true,
+      "note": "reddit_claims=134; every ranked area has Reddit claims=True",
+      "required": true
+    },
+    {
+      "name": "20-claim groundedness sample passed",
+      "pass": true,
+      "note": "Phase 5 GROUNDEDNESS.md / EVAL_NOTES",
+      "required": true
+    },
+    {
+      "name": "≥ 5 ranked opportunity areas with quantification and comparison",
+      "pass": true,
+      "note": "ranked=10 comparison_fields=True",
+      "required": true
+    },
+    {
+      "name": "Non-monetary opportunities identified (or price-dominance named without a coupon pitch)",
+      "pass": true,
+      "note": "non_monetary=9 monetary=1 coupon_pitch=False",
+      "required": true
+    },
+    {
+      "name": "Intent vs bookmark addressed with evidence",
+      "pass": true,
+      "note": "Q1=Partial Q8=Partial wishlist_claims=10 reading=Bookmark-style saving outweighs stated intent.",
+      "required": true
+    },
+    {
+      "name": "No solution / MVP / interview plan presented as the Part 1 output",
+      "pass": true,
+      "note": "report states draft is not an MVP / interview plan",
+      "required": true
+    },
+    {
+      "name": "Discovery report path recorded for Parts 2–4",
+      "pass": true,
+      "note": "report=D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\discovery-report.md ledger=D:\\Fashion Project\\Phases\\Phase5_OptionalExpansion\\output\\evidence-ledger.json",
+      "required": true
+    }
+  ],
+  "process_evals": [
+    {
+      "name": "Raw corpus retained",
+      "pass": true,
+      "note": "Phase1 Reddit docs=326; Phase4 store=561",
+      "required": true
+    },
+    {
+      "name": "Relevance labels exist",
+      "pass": true,
+      "note": "Phase2 labeled=326; claims=124",
+      "required": true
+    },
+    {
+      "name": "Sample of relevance-gate labels human-checked (≥ 15)",
+      "pass": true,
+      "note": "15/15 (100%), sample>=15",
+      "required": true
+    },
+    {
+      "name": "Report version notes source mix and date of pull",
+      "pass": true,
+      "note": "Phase 5 discovery-report source mix table",
+      "required": true
+    },
+    {
+      "name": "Re-run path is documented",
+      "pass": true,
+      "note": "re-run section in Phase 5 report / phase READMEs",
+      "required": true
+    }
+  ],
+  "source_draft": "phase5_reddit_primary_store_corroboration_wishlist_expansion",
+  "coverage": {
+    "answered": 6,
+    "partial": 4,
+    "gap": 0,
+    "answered_or_partial": 10,
+    "pass_8_of_10": true,
+    "gaps_named": true
+  },
+  "ranked_areas": 10,
+  "wishlist": {
+    "claims": 10,
+    "threads": 5,
+    "reading": "Bookmark-style saving outweighs stated intent.",
+    "q1": "Partial",
+    "q8": "Partial"
+  },
+  "caveats": [
+    "Q1/Q8 are Partial on a thin wishlist base (10 claims / 5 threads). Direction is evidence-backed; strength is limited because the Phase 5 sweep was truncated.",
+    "4 discovery questions remain Partial (acceptable under evals.md; not silent Gaps).",
+    "Phase 5 standing limitations note a truncated wishlist sweep; re-running Phase 5 with --force can extend the corpus later.",
+    "No internal Myntra wishlist→purchase conversion rate is available. Part 1 ranks opportunity areas from public evidence only."
+  ]
+}

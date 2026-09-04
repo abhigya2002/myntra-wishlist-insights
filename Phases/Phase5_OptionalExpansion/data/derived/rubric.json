@@ -1,0 +1,163 @@
+{
+  "weights": {
+    "metric_relevance": 0.3,
+    "evidence_strength": 0.25,
+    "delay_dropoff": 0.2,
+    "constraint_fit": 0.15,
+    "segment_honesty": 0.1
+  },
+  "note": "Evidence strength is 70% Reddit + 15% store corroboration + 15% Groq share. Phase 5 expansion claims are Reddit claims and carry full weight; store-only areas are still not ranked.",
+  "formula": "score = 100 * rubric + 3 if Reddit>=2 and store>=3",
+  "ranked": [
+    {
+      "rank": 1,
+      "id": "quality_uncertainty",
+      "score": 93.572,
+      "reddit_claims": 27,
+      "store_claims": 109,
+      "phase5_claims": 0,
+      "factors": {
+        "metric_relevance": 0.8281,
+        "evidence_strength": 0.8555,
+        "delay_dropoff": 0.9853,
+        "constraint_fit": 0.9757,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 2,
+      "id": "fit_size_uncertainty",
+      "score": 89.22,
+      "reddit_claims": 9,
+      "store_claims": 22,
+      "phase5_claims": 0,
+      "factors": {
+        "metric_relevance": 0.832,
+        "evidence_strength": 0.8104,
+        "delay_dropoff": 0.8,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 3,
+      "id": "returns_and_order_trust",
+      "score": 83.531,
+      "reddit_claims": 25,
+      "store_claims": 99,
+      "phase5_claims": 0,
+      "factors": {
+        "metric_relevance": 0.5546,
+        "evidence_strength": 0.8609,
+        "delay_dropoff": 0.8758,
+        "constraint_fit": 0.9903,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 4,
+      "id": "review_thinness",
+      "score": 77.6775,
+      "reddit_claims": 18,
+      "store_claims": 7,
+      "phase5_claims": 0,
+      "factors": {
+        "metric_relevance": 0.706,
+        "evidence_strength": 0.8175,
+        "delay_dropoff": 0.412,
+        "constraint_fit": 0.988,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 5,
+      "id": "wishlist_intent_ambiguity",
+      "score": 75.11,
+      "reddit_claims": 6,
+      "store_claims": 0,
+      "phase5_claims": 6,
+      "factors": {
+        "metric_relevance": 0.825,
+        "evidence_strength": 0.4944,
+        "delay_dropoff": 0.65,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 6,
+      "id": "price_watch_and_checkout",
+      "score": 69.9355,
+      "reddit_claims": 10,
+      "store_claims": 7,
+      "phase5_claims": 1,
+      "factors": {
+        "metric_relevance": 0.6282,
+        "evidence_strength": 0.8289,
+        "delay_dropoff": 0.6588,
+        "constraint_fit": 0.2794,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 7,
+      "id": "off_platform_research",
+      "score": 69.5515,
+      "reddit_claims": 6,
+      "store_claims": 0,
+      "phase5_claims": 0,
+      "factors": {
+        "metric_relevance": 0.6375,
+        "evidence_strength": 0.6837,
+        "delay_dropoff": 0.4167,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 8,
+      "id": "assortment_or_access_gap",
+      "score": 66.798,
+      "reddit_claims": 14,
+      "store_claims": 2,
+      "phase5_claims": 0,
+      "factors": {
+        "metric_relevance": 0.3631,
+        "evidence_strength": 0.8562,
+        "delay_dropoff": 0.475,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 9,
+      "id": "occasion_and_styling_uncertainty",
+      "score": 63.52,
+      "reddit_claims": 10,
+      "store_claims": 0,
+      "phase5_claims": 0,
+      "factors": {
+        "metric_relevance": 0.4875,
+        "evidence_strength": 0.7158,
+        "delay_dropoff": 0.3,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    },
+    {
+      "rank": 10,
+      "id": "cross_listing_compare",
+      "score": 60.32,
+      "reddit_claims": 5,
+      "store_claims": 0,
+      "phase5_claims": 3,
+      "factors": {
+        "metric_relevance": 0.5525,
+        "evidence_strength": 0.5098,
+        "delay_dropoff": 0.3,
+        "constraint_fit": 1.0,
+        "segment_honesty": 1.0
+      }
+    }
+  ]
+}

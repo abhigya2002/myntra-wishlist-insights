@@ -1,0 +1,423 @@
+{
+  "phase": 0,
+  "version": "1.0.0",
+  "product": "Myntra",
+  "priority_source": "reddit",
+  "north_star_metric": "percent of users who purchase at least one wishlisted item within 30 days of adding it",
+  "hard_constraint": "no_monetary_incentives",
+  "time_window": {
+    "start": "2024-08-17",
+    "end": "2026-08-17",
+    "duration_months": 24,
+    "timezone": "Asia/Kolkata",
+    "rationale": "18-24 month default from the implementation plan. 24 months covers two Diwali cycles, two wedding peaks, EORS / Big Fashion Festival, and Republic Day / Independence Day / New Year sales."
+  },
+  "discovery_questions": {
+    "1": "Why do users add fashion products to their Myntra wishlist?",
+    "2": "What prevents wishlisted products from eventually being purchased?",
+    "3": "What uncertainties remain after users have identified a product they like?",
+    "4": "What causes users to postpone a purchase?",
+    "5": "How do users compare multiple shortlisted products?",
+    "6": "What information do users seek outside Myntra before purchasing?",
+    "7": "What role do fit, size, styling, price, reviews, occasion, and social validation play?",
+    "8": "When do users use the wishlist as genuine purchase intent versus simply as a bookmarking mechanism?",
+    "9": "How do these behaviors differ across user segments?",
+    "10": "What unmet needs emerge consistently across user conversations?"
+  },
+  "segment_hypotheses": [
+    "ethnic_vs_western",
+    "first_time_vs_repeat",
+    "sale_waiter_vs_occasion_buyer",
+    "metro_vs_rest_of_india",
+    "size_insecure_vs_size_confident"
+  ],
+  "segment_note": "Hypotheses to look for in the corpus. Do not filter ingest to these segments. Do not assert them without quotes.",
+  "reddit": {
+    "include_submissions": true,
+    "include_comments": true,
+    "keep_hinglish": true,
+    "drop_short_comments": false,
+    "skip_deleted_or_removed": true,
+    "skip_missing_subreddits": true,
+    "sorts": ["relevance", "new", "top"],
+    "top_time_filter": "year",
+    "suggested_max_submissions_per_job": 100,
+    "suggested_max_comments_per_submission": 50,
+    "search_scope": {
+      "myntra_named": ["site_wide", "primary"],
+      "behavior_unbranded": ["primary", "india_general", "city"]
+    },
+    "phase1_first_slice": {
+      "include_scopes": ["site_wide", "primary"],
+      "note": "Run this slice in Phase 1 before expanding to india_general and city."
+    },
+    "phase1_waves": {
+      "1": {
+        "description": "Minimum Reddit slice. Run this first. Deduplicate by post id across jobs.",
+        "include": [
+          {"bucket": "myntra_named", "scopes": ["site_wide", "primary"]},
+          {"bucket": "behavior_unbranded", "scopes": ["primary"]}
+        ]
+      },
+      "2": {
+        "description": "If wave 1 is thin on off-platform research (Q6) or segments (Q9).",
+        "include": [
+          {"bucket": "behavior_unbranded", "scopes": ["india_general", "city"]}
+        ]
+      }
+    },
+    "subreddit_tiers": {
+      "primary": [
+        "IndianFashionAddicts",
+        "indianfashion",
+        "DesiFashionAdvice",
+        "IndianStreetFashion",
+        "IndianMakeupAddicts",
+        "TwoXIndia"
+      ],
+      "india_general": [
+        "india",
+        "AskIndia",
+        "IndiaSpeaks",
+        "NRI",
+        "ABCDesis"
+      ],
+      "city": [
+        "mumbai",
+        "bangalore",
+        "delhi",
+        "hyderabad",
+        "Pune",
+        "Chennai",
+        "kolkata"
+      ],
+      "global_context": [
+        "femalefashionadvice",
+        "malefashionadvice",
+        "plussize"
+      ],
+      "try_if_exists": [
+        "Myntra",
+        "IndiaShopping",
+        "IndianConsumer",
+        "Flipkart",
+        "IndianWeddings",
+        "IndianStreetwear"
+      ]
+    },
+    "queries": [
+      {
+        "id": "mn_brand",
+        "query": "myntra",
+        "bucket": "myntra_named",
+        "discovery_questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "notes": "Broad branded catch. High recall; Phase 2 gates noise."
+      },
+      {
+        "id": "mn_wishlist",
+        "query": "myntra wishlist",
+        "bucket": "myntra_named",
+        "discovery_questions": [1, 8],
+        "notes": "Explicit wishlist language."
+      },
+      {
+        "id": "mn_added_wishlist",
+        "query": "\"added to wishlist\" myntra",
+        "bucket": "myntra_named",
+        "discovery_questions": [1, 8],
+        "notes": "Journey language after identifying a product."
+      },
+      {
+        "id": "mn_save_later",
+        "query": "myntra \"save for later\"",
+        "bucket": "myntra_named",
+        "discovery_questions": [1, 8],
+        "notes": "Bookmark vs intent."
+      },
+      {
+        "id": "mn_size",
+        "query": "myntra size",
+        "bucket": "myntra_named",
+        "discovery_questions": [2, 3, 7],
+        "notes": "Size uncertainty after shortlisting."
+      },
+      {
+        "id": "mn_size_chart",
+        "query": "myntra \"size chart\"",
+        "bucket": "myntra_named",
+        "discovery_questions": [3, 6, 7],
+        "notes": "Information sought to resolve fit."
+      },
+      {
+        "id": "mn_fit",
+        "query": "myntra fit",
+        "bucket": "myntra_named",
+        "discovery_questions": [2, 3, 7],
+        "notes": "Fit as remaining uncertainty."
+      },
+      {
+        "id": "mn_runs_small",
+        "query": "\"runs small\" myntra",
+        "bucket": "myntra_named",
+        "discovery_questions": [3, 7, 9],
+        "notes": "Brand-level size inconsistency."
+      },
+      {
+        "id": "mn_quality",
+        "query": "myntra quality",
+        "bucket": "myntra_named",
+        "discovery_questions": [2, 3, 7],
+        "notes": "Quality doubt after liking a product."
+      },
+      {
+        "id": "mn_not_worth",
+        "query": "myntra \"not worth\"",
+        "bucket": "myntra_named",
+        "discovery_questions": [2, 4, 7],
+        "notes": "Drop-off after identification."
+      },
+      {
+        "id": "mn_sale",
+        "query": "myntra sale",
+        "bucket": "myntra_named",
+        "discovery_questions": [4, 8],
+        "notes": "Sale-waiting / bookmark-for-price."
+      },
+      {
+        "id": "mn_eors",
+        "query": "myntra EORS",
+        "bucket": "myntra_named",
+        "discovery_questions": [4, 8],
+        "notes": "Named sale event postponement."
+      },
+      {
+        "id": "mn_price_drop",
+        "query": "\"price drop\" myntra",
+        "bucket": "myntra_named",
+        "discovery_questions": [4, 8],
+        "notes": "Watchlist behavior. Price talk is evidence; discount is not an intervention."
+      },
+      {
+        "id": "mn_wait_sale",
+        "query": "\"wait for sale\" myntra",
+        "bucket": "myntra_named",
+        "discovery_questions": [1, 4, 8],
+        "notes": "Explicit postpone + bookmark."
+      },
+      {
+        "id": "mn_vs_ajio",
+        "query": "myntra vs ajio",
+        "bucket": "myntra_named",
+        "discovery_questions": [5, 6],
+        "notes": "Comparison. AJIO is comparison context only."
+      },
+      {
+        "id": "mn_which_one",
+        "query": "\"which one\" myntra",
+        "bucket": "myntra_named",
+        "discovery_questions": [5, 6],
+        "notes": "Shortlist comparison."
+      },
+      {
+        "id": "mn_has_anyone",
+        "query": "\"has anyone bought\" myntra",
+        "bucket": "myntra_named",
+        "discovery_questions": [3, 6, 7],
+        "notes": "Off-platform social proof after identifying a product."
+      },
+      {
+        "id": "mn_haul",
+        "query": "myntra haul",
+        "bucket": "myntra_named",
+        "discovery_questions": [6, 7],
+        "notes": "YouTube/social validation language on Reddit."
+      },
+      {
+        "id": "mn_review",
+        "query": "myntra review",
+        "bucket": "myntra_named",
+        "discovery_questions": [3, 6, 7],
+        "notes": "Reviews as remaining information need."
+      },
+      {
+        "id": "mn_wedding",
+        "query": "myntra wedding",
+        "bucket": "myntra_named",
+        "discovery_questions": [1, 4, 7, 9],
+        "notes": "Occasion delay vs intent. Segment hypothesis: occasion buyer."
+      },
+      {
+        "id": "mn_ethnic",
+        "query": "myntra ethnic",
+        "bucket": "myntra_named",
+        "discovery_questions": [7, 9],
+        "notes": "Segment hypothesis: ethnic wear. Do not assume."
+      },
+      {
+        "id": "mn_kurta",
+        "query": "myntra kurta",
+        "bucket": "myntra_named",
+        "discovery_questions": [7, 9],
+        "notes": "Ethnic / occasion sizing and styling."
+      },
+      {
+        "id": "mn_western",
+        "query": "myntra \"western wear\"",
+        "bucket": "myntra_named",
+        "discovery_questions": [7, 9],
+        "notes": "Segment hypothesis: western wear."
+      },
+      {
+        "id": "mn_return",
+        "query": "myntra return",
+        "bucket": "myntra_named",
+        "discovery_questions": [2, 3, 4],
+        "notes": "Returns / Try and Buy as delay or safety net."
+      },
+      {
+        "id": "mn_try_buy",
+        "query": "myntra \"try and buy\"",
+        "bucket": "myntra_named",
+        "discovery_questions": [2, 3, 4],
+        "notes": "Try and Buy culture vs commitment."
+      },
+      {
+        "id": "bh_wishlist_india",
+        "query": "wishlist fashion india",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [1, 8],
+        "notes": "Wishlist as category behavior, not Myntra-named."
+      },
+      {
+        "id": "bh_save_later",
+        "query": "\"save for later\" shopping india",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [1, 8],
+        "notes": "Bookmarking language."
+      },
+      {
+        "id": "bh_size_chart",
+        "query": "online shopping size chart india",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [3, 6, 7],
+        "notes": "Fit information sought off-app."
+      },
+      {
+        "id": "bh_runs_small",
+        "query": "\"runs small\" online shopping india",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [3, 7, 9],
+        "notes": "Size insecurity as category pattern."
+      },
+      {
+        "id": "bh_wait_sale",
+        "query": "\"wait for sale\" clothes india",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [4, 8],
+        "notes": "Sale-waiting as default habit."
+      },
+      {
+        "id": "bh_ethnic_fit",
+        "query": "ethnic wear fit online",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [3, 7, 9],
+        "notes": "Ethnic fit uncertainty."
+      },
+      {
+        "id": "bh_should_i_buy",
+        "query": "\"should I buy\" dress india",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [3, 5, 6, 7],
+        "notes": "Social validation before purchase."
+      },
+      {
+        "id": "bh_has_anyone_ethnic",
+        "query": "\"has anyone ordered\" ethnic",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [3, 6, 7],
+        "notes": "Off-platform proof after shortlisting."
+      },
+      {
+        "id": "bh_wedding_online",
+        "query": "wedding shopping online india",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [1, 4, 7, 9],
+        "notes": "Occasion buying and postpone-until-event."
+      },
+      {
+        "id": "bh_fake_reviews",
+        "query": "fake reviews myntra OR ajio",
+        "bucket": "behavior_unbranded",
+        "discovery_questions": [3, 6, 7, 10],
+        "notes": "Review trust. AJIO is comparison only."
+      }
+    ]
+  },
+  "later_phase_seeds": {
+    "play_store": {
+      "phase": 4,
+      "app_id": "com.myntra.android",
+      "keywords": ["wishlist", "size", "fit", "return", "quality", "sale", "size chart"]
+    },
+    "app_store": {
+      "phase": 4,
+      "app_name": "Myntra Fashion Shopping App",
+      "keywords": ["wishlist", "size", "fit", "return", "quality", "sale", "size chart"]
+    },
+    "communities": {
+      "phase": 5,
+      "seeds": [
+        "MouthShut Myntra reviews",
+        "Quora public threads: Myntra wishlist, size, fit"
+      ]
+    },
+    "youtube": {
+      "phase": 5,
+      "search_queries": [
+        "myntra haul",
+        "myntra try on",
+        "myntra sizing",
+        "myntra review"
+      ]
+    },
+    "social": {
+      "phase": 5,
+      "note": "Public posts only, and only if discovery-question Gaps remain after Reddit + stores."
+    }
+  },
+  "do_not_ingest": [
+    "Private WhatsApp groups",
+    "Private Telegram channels",
+    "Private Discord servers",
+    "Instagram DMs",
+    "Facebook DMs and private groups",
+    "Reddit chat and private messages",
+    "Myntra account data: wishlists, orders, cart",
+    "Any page behind login",
+    "Paywalled editorial content",
+    "Non-public Facebook groups",
+    "Scraped customer PII"
+  ],
+  "do_not_ingest_note": "Off-platform private research (WhatsApp, Instagram DMs) is a Part 3 interview topic, not an ingest target.",
+  "competitor_policy": "AJIO, Nykaa Fashion, and other marketplaces are comparison context only. Never the product under study.",
+  "phase1_raw_document_fields": [
+    "id",
+    "source",
+    "url",
+    "captured_at",
+    "created_at",
+    "title",
+    "body",
+    "thread_context",
+    "language",
+    "raw_metadata"
+  ],
+  "phase1_raw_metadata_should_include": [
+    "subreddit",
+    "query_id",
+    "query",
+    "search_scope",
+    "pull_job_id",
+    "spec_version"
+  ]
+}

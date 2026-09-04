@@ -1,0 +1,34 @@
+{
+  "phase": 4,
+  "product": "Myntra",
+  "sources": [
+    "play_store",
+    "app_store"
+  ],
+  "play_app_id": "com.myntra.android",
+  "app_store_id": "907394059",
+  "time_window": {
+    "start": "2024-08-17",
+    "end": "2026-08-30T19:03:24Z"
+  },
+  "pulled_at": "2026-08-30T19:03:29Z",
+  "document_count": 561,
+  "by_source": {
+    "play_store": 143,
+    "app_store": 418
+  },
+  "stats": {
+    "play_fetched": 200,
+    "play_kept": 143,
+    "app_fetched": 500,
+    "app_kept": 418,
+    "outside_window": 0,
+    "play_backend": "google_play_scraper",
+    "errors": []
+  },
+  "files": {
+    "documents": "D:\\Fashion Project\\Phases\\Phase4_StoreReviews\\data\\raw\\store_reviews.jsonl",
+    "pull_log": "D:\\Fashion Project\\Phases\\Phase4_StoreReviews\\data\\raw\\pull_log.jsonl"
+  },
+  "re_run": "python ingest.py"
+}

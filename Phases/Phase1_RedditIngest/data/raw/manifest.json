@@ -1,0 +1,51 @@
+{
+  "phase": 1,
+  "product": "Myntra",
+  "source": "reddit",
+  "adapter": "arctic_shift",
+  "mode": "reviewlens_myntra",
+  "spec_version": "1.0.0",
+  "time_window": {
+    "start": "2024-08-17",
+    "end": "2026-08-17",
+    "duration_months": 24,
+    "timezone": "Asia/Kolkata",
+    "rationale": "18-24 month default from the implementation plan. 24 months covers two Diwali cycles, two wedding peaks, EORS / Big Fashion Festival, and Republic Day / Independence Day / New Year sales."
+  },
+  "pulled_at": "2026-08-17T16:51:24Z",
+  "document_count": 326,
+  "by_kind": {
+    "submission": 90,
+    "comment": 236
+  },
+  "by_subreddit": {
+    "TwoXIndia": 193,
+    "AskIndia": 63,
+    "Flipkart": 30,
+    "IndianFashion": 11,
+    "IndiaSpeaks": 10,
+    "IndianStreetWear": 9,
+    "nri": 9,
+    "Indiashopping": 1
+  },
+  "stats": {
+    "kept": 206,
+    "duplicate": 0,
+    "skipped_not_myntra": 2,
+    "skipped_removed": 43,
+    "api_errors": 8
+  },
+  "api_requests": 40,
+  "files": {
+    "documents": "D:\\Fashion Project\\Phases\\Phase1_RedditIngest\\data\\raw\\reddit_documents.jsonl",
+    "pull_log": "D:\\Fashion Project\\Phases\\Phase1_RedditIngest\\data\\raw\\pull_log.jsonl"
+  },
+  "cli": {
+    "max_brand": 150,
+    "max_per_query": 40,
+    "max_per_subreddit": 50,
+    "skip_thread_comments": false
+  },
+  "myntra_only": true,
+  "re_run": "python ingest.py"
+}

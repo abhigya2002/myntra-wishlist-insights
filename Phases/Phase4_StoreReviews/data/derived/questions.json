@@ -1,0 +1,384 @@
+{
+  "coverage": {
+    "answered": 6,
+    "partial": 2,
+    "gap": 2,
+    "answered_or_partial": 8,
+    "pass_8_of_10": true,
+    "gaps_named": true
+  },
+  "answers": [
+    {
+      "id": 1,
+      "question": "Why add to the Myntra wishlist?",
+      "coverage": "Gap",
+      "claim_count": 1,
+      "thread_count": 1,
+      "reddit_claims": 1,
+      "store_claims": 0,
+      "answer": "The Phase 2 claims do not contain explicit 'add to wishlist' language. wishlist_signal is `none` on every extracted claim. Raw Reddit text mentions wishlist in only a handful of documents, so why people add cannot be answered from this pull. Closest behaviors are scrolling Myntra, holding items in cart, and saving inspiration threads — which is bookmark-like, not a measured add.",
+      "evidence": [
+        {
+          "claim_id": "t3_1js1yvj__c1",
+          "quote": "Since Myntra has the best online shopping and easy return(pickup) i am considering using that and have done that before.",
+          "url": "https://www.reddit.com/r/nri/comments/1js1yvj/buying_apparel_and_shoes_in_india/",
+          "doc_id": "t3_1js1yvj",
+          "theme": "returns_safety_net",
+          "opportunity_id": "returns_and_order_trust",
+          "source": "reddit"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What prevents wishlisted products from being purchased?",
+      "coverage": "Answered",
+      "claim_count": 298,
+      "thread_count": 216,
+      "reddit_claims": 66,
+      "store_claims": 232,
+      "answer": "What blocks a buy after Myntra is in play: missing/mixed reviews, quality or fake-goods fear, fit/size misses, checkout price jumps, and a reverse path (return/refund/cancel) that people do not trust. Several quotes sit at hesitation-to-order, not just after a bad delivery. Store reviews add 232 claims on this question (Play 53, App Store 179).",
+      "evidence": [
+        {
+          "claim_id": "t3_1tp0igu__c1",
+          "quote": "I am scrolling through myntra and stuff but none of the affordable options have enough reviews for me to make a decision.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1tp0igu/affordable_college_purse_recommendation_please/",
+          "doc_id": "t3_1tp0igu",
+          "theme": "review_trust",
+          "opportunity_id": "review_thinness",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t1_oquls2f__c1",
+          "quote": "Received different colored New balance worth ₹16k when I created return request, original item images changed on page.",
+          "url": "https://www.reddit.com/r/Flipkart/comments/1u1wnjw/flipkart_is_a_scam/oquls2f/",
+          "doc_id": "t1_oquls2f",
+          "theme": "quality_doubt",
+          "opportunity_id": "quality_uncertainty",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1tvmrju__c1",
+          "quote": "I've scrolled myntra day n night but didn't like a tee which has a deep neck, at least compared to regular ones.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1tvmrju/round_neck_suffocates_me/",
+          "doc_id": "t3_1tvmrju",
+          "theme": "unmet_need",
+          "opportunity_id": "assortment_or_access_gap",
+          "source": "reddit"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What uncertainties remain after a product is identified?",
+      "coverage": "Answered",
+      "claim_count": 231,
+      "thread_count": 166,
+      "reddit_claims": 61,
+      "store_claims": 170,
+      "answer": "After a product is identified, leftover uncertainty is whether reviews can be trusted, whether fabric/quality matches the image, whether it will fit, and whether the look works on their body/occasion. People keep asking Reddit after they have already scrolled Myntra. Store reviews add 170 claims on this question (Play 36, App Store 134).",
+      "evidence": [
+        {
+          "claim_id": "t3_1tp0igu__c1",
+          "quote": "I am scrolling through myntra and stuff but none of the affordable options have enough reviews for me to make a decision.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1tp0igu/affordable_college_purse_recommendation_please/",
+          "doc_id": "t3_1tp0igu",
+          "theme": "review_trust",
+          "opportunity_id": "review_thinness",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1vkwlay__c1",
+          "quote": "I've been surfing nykaa and myntra for past couple days but I'm in so much doubt ples help.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1vkwlay/recommend_good_high_impact_full_coverage_sports/",
+          "doc_id": "t3_1vkwlay",
+          "theme": "other",
+          "opportunity_id": "review_thinness",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1unu1p2__c1",
+          "quote": "whenever I order on Myntra, Amazon, etc the length is always short on me..",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1unu1p2/tall_girlies_pls_help_me_find_pants/",
+          "doc_id": "t3_1unu1p2",
+          "theme": "fit_uncertainty",
+          "opportunity_id": "fit_size_uncertainty",
+          "source": "reddit"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What causes postponement?",
+      "coverage": "Answered",
+      "claim_count": 130,
+      "thread_count": 91,
+      "reddit_claims": 24,
+      "store_claims": 106,
+      "answer": "Postponement shows up as waiting on occasion (wedding/event dressing), waiting on price/checkout math, and waiting because a return or refund last time went badly. Festival language in the raw pull is present but many heuristic 'occasion' hits are title echoes — those were down-weighted in ranking. Store reviews add 106 claims on this question (Play 29, App Store 77).",
+      "evidence": [
+        {
+          "claim_id": "as_14486084800__s2",
+          "quote": "After a week, exchange product came and the delivery agent again asked for the original product (which i had already handed over) so didn’t receive that exchange as well and hence neither I had the original product nor the exchanged one.",
+          "url": "https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059?see-all=reviews",
+          "doc_id": "as_14486084800",
+          "theme": "returns_safety_net",
+          "opportunity_id": "returns_and_order_trust",
+          "source": "app_store"
+        },
+        {
+          "claim_id": "gp_a2fdc505-d231-46eb-a6cc-234f68cf47cd__s1",
+          "quote": "when I tried to exchange the size, the delivery agent denied the exchange as the app didn't accept the product received from them as it was a different brand and asked me to connect with the customer service loop.",
+          "url": "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en_IN&gl=IN&reviewId=a2fdc505-d231-46eb-a6cc-234f68cf47cd",
+          "doc_id": "gp_a2fdc505-d231-46eb-a6cc-234f68cf47cd",
+          "theme": "returns_safety_net",
+          "opportunity_id": "returns_and_order_trust",
+          "source": "play_store"
+        },
+        {
+          "claim_id": "gp_27c9d92b-c518-4594-b916-780d924dc8e6__s1",
+          "quote": "okay I understand return policies are good, but atleast desanitize or clean the items before sending, because lately I have been returning every item only because they felt, smelt and seemed used.",
+          "url": "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en_IN&gl=IN&reviewId=27c9d92b-c518-4594-b916-780d924dc8e6",
+          "doc_id": "gp_27c9d92b-c518-4594-b916-780d924dc8e6",
+          "theme": "returns_safety_net",
+          "opportunity_id": "returns_and_order_trust",
+          "source": "play_store"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How do users compare shortlisted products?",
+      "coverage": "Partial",
+      "claim_count": 3,
+      "thread_count": 3,
+      "reddit_claims": 3,
+      "store_claims": 0,
+      "answer": "Comparison language is thin. A few comments check that an item is 'also available in Myntra', ask 'which one do you suggest', or note the same SKU priced differently on Myntra vs Flipkart vs a brand site. This is cross-listing, not a documented 2–3 item shortlist workflow inside the Myntra wishlist.",
+      "evidence": [
+        {
+          "claim_id": "t1_p3t27e2__c1",
+          "quote": "i have bigger bust size so it was soooo hard to find i tried zivame jockey etc but nothing came close to blissclub.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1vkwlay/recommend_good_high_impact_full_coverage_sports/p3t27e2/",
+          "doc_id": "t1_p3t27e2",
+          "theme": "size_inconsistency",
+          "opportunity_id": "fit_size_uncertainty",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t1_oldjwxv__c1",
+          "quote": "also available in myntra",
+          "url": "https://www.reddit.com/r/Flipkart/comments/1tazeu8/should_i_buy_it_from_flipkart/oldjwxv/",
+          "doc_id": "t1_oldjwxv",
+          "theme": "comparison",
+          "opportunity_id": "cross_listing_compare",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t1_oowi41i__h1",
+          "quote": "Than which one do you suggest?",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1tqtehb/has_anyone_tried_hm_sports_bra/oowi41i/",
+          "doc_id": "t1_oowi41i",
+          "theme": "comparison",
+          "opportunity_id": "cross_listing_compare",
+          "source": "reddit"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What do they seek outside Myntra before purchasing?",
+      "coverage": "Answered",
+      "claim_count": 20,
+      "thread_count": 11,
+      "reddit_claims": 20,
+      "store_claims": 0,
+      "answer": "Outside Myntra they ask Reddit ('has anyone tried'), look at Instagram/small brands, Decathlon, Zara/Urbanic/Forever New, Nykaa, Amazon, and brand sites. NRI threads also ask how to buy in India and ship out. This corpus *is* the off-platform step.",
+      "evidence": [
+        {
+          "claim_id": "t3_1unu1p2__c2",
+          "quote": "where to find longer palazzos for tall girls that go below ankle, any small business or Insta stores are also fine if you’ve tried them",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1unu1p2/tall_girlies_pls_help_me_find_pants/",
+          "doc_id": "t3_1unu1p2",
+          "theme": "off_platform_research",
+          "opportunity_id": "off_platform_research",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1um8tlo__c1",
+          "quote": "Generally I buy from Myntra but now it's same collection everywhere..",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1um8tlo/can_someone_suggest_classy_palazzo_kurta_set_for/",
+          "doc_id": "t3_1um8tlo",
+          "theme": "unmet_need",
+          "opportunity_id": "assortment_or_access_gap",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1nbkr1h__c3",
+          "quote": "please do suggest some reliable long belts products or some better trust worthy sites to buy.",
+          "url": "https://www.reddit.com/r/AskIndia/comments/1nbkr1h/looking_for_a_belt_for_obese_people/",
+          "doc_id": "t3_1nbkr1h",
+          "theme": "off_platform_research",
+          "opportunity_id": "off_platform_research",
+          "source": "reddit"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Role of fit, size, styling, price, reviews, occasion, social validation?",
+      "coverage": "Answered",
+      "claim_count": 82,
+      "thread_count": 55,
+      "reddit_claims": 53,
+      "store_claims": 29,
+      "answer": "Reviews and quality talk dominate. Fit/size is smaller but concrete (length short, bras, belts). Styling appears on event/saree threads. Price appears as checkout uplift and cross-platform gaps. Occasion is wedding/event dressing. Social validation is the 'has anyone tried' ask. These are roles in the journey, not a flat importance ranking. Store reviews add 29 claims on this question (Play 0, App Store 29).",
+      "evidence": [
+        {
+          "claim_id": "t3_1tp0igu__c1",
+          "quote": "I am scrolling through myntra and stuff but none of the affordable options have enough reviews for me to make a decision.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1tp0igu/affordable_college_purse_recommendation_please/",
+          "doc_id": "t3_1tp0igu",
+          "theme": "review_trust",
+          "opportunity_id": "review_thinness",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1tvmrju__c1",
+          "quote": "I've scrolled myntra day n night but didn't like a tee which has a deep neck, at least compared to regular ones.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1tvmrju/round_neck_suffocates_me/",
+          "doc_id": "t3_1tvmrju",
+          "theme": "unmet_need",
+          "opportunity_id": "assortment_or_access_gap",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1nymnyi__c1",
+          "quote": "my budget was 600 and it's really the extreme of my budget but while placing order it adds upto 675",
+          "url": "https://www.reddit.com/r/AskIndia/comments/1nymnyi/need_ya_help_for_shopping_myntra/",
+          "doc_id": "t3_1nymnyi",
+          "theme": "price_uncertainty",
+          "opportunity_id": "price_watch_and_checkout",
+          "source": "reddit"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Wishlist as intent vs bookmark?",
+      "coverage": "Gap",
+      "claim_count": 8,
+      "thread_count": 8,
+      "reddit_claims": 1,
+      "store_claims": 7,
+      "answer": "Intent vs bookmark cannot be scored from this corpus. No claim is tagged explicit or implied wishlist. Treating every Myntra mention as purchase intent would fail the eval. The honest reading: people use Myntra as a browse/watch surface (scroll, compare, ask Reddit) and sometimes leave items in cart after a cancelled order. That is not the same as 'wishlist = almost a purchase'.",
+      "evidence": [
+        {
+          "claim_id": "t3_1rqyag7__c4",
+          "quote": "Hopefully this can become a little saved thread of great dresses that we can all come back to whenever we have an event and don’t know what to wear.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1rqyag7/ladies_share_your_favourite_event_dresses/",
+          "doc_id": "t3_1rqyag7",
+          "theme": "bookmark_not_intent",
+          "opportunity_id": null,
+          "source": "reddit"
+        },
+        {
+          "claim_id": "as_14485815954__s1",
+          "quote": "The major reason why I like Myntra is we get the same product with good discount where outside we might not get it at the same discounted price.",
+          "url": "https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059?see-all=reviews",
+          "doc_id": "as_14485815954",
+          "theme": "price_uncertainty",
+          "opportunity_id": "price_watch_and_checkout",
+          "source": "app_store"
+        },
+        {
+          "claim_id": "gp_521a0c32-bbcf-4efc-bb6b-e782c8b245e4__s2",
+          "quote": "that's why I purchased 12 Louis Philippe shirts from this app and at a wonderful discount too...",
+          "url": "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en_IN&gl=IN&reviewId=521a0c32-bbcf-4efc-bb6b-e782c8b245e4",
+          "doc_id": "gp_521a0c32-bbcf-4efc-bb6b-e782c8b245e4",
+          "theme": "price_uncertainty",
+          "opportunity_id": "price_watch_and_checkout",
+          "source": "play_store"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How do behaviors differ across segments?",
+      "coverage": "Partial",
+      "claim_count": 7,
+      "thread_count": 5,
+      "reddit_claims": 7,
+      "store_claims": 0,
+      "answer": "Only earned segments appear. ethnic_vs_western shows up on 6 claims (lehenga, palazzo, western-wear search). size_insecure_vs_size_confident shows up on 2 claims (tall length, plus-size belts, cup/band). Metro vs rest-of-India, first-time vs repeat, and sale-waiter vs occasion-buyer were not supported. No personas were invented.",
+      "evidence": [
+        {
+          "claim_id": "t3_1unu1p2__c2",
+          "quote": "where to find longer palazzos for tall girls that go below ankle, any small business or Insta stores are also fine if you’ve tried them",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1unu1p2/tall_girlies_pls_help_me_find_pants/",
+          "doc_id": "t3_1unu1p2",
+          "theme": "off_platform_research",
+          "opportunity_id": "off_platform_research",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1vj02n0__c1",
+          "quote": "Unfortunately, Myntra doesn't work outside of India (or at very least in EU).",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1vj02n0/best_places_to_buy_lehengas_for_a_wedding/",
+          "doc_id": "t3_1vj02n0",
+          "theme": "unmet_need",
+          "opportunity_id": "assortment_or_access_gap",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1um8tlo__c1",
+          "quote": "Generally I buy from Myntra but now it's same collection everywhere..",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1um8tlo/can_someone_suggest_classy_palazzo_kurta_set_for/",
+          "doc_id": "t3_1um8tlo",
+          "theme": "unmet_need",
+          "opportunity_id": "assortment_or_access_gap",
+          "source": "reddit"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What unmet needs show up consistently?",
+      "coverage": "Answered",
+      "claim_count": 22,
+      "thread_count": 18,
+      "reddit_claims": 20,
+      "store_claims": 2,
+      "answer": "Recurring unmet needs: enough trusted reviews on affordable options, quality that matches the listing, sizes that exist (tall, plus, specific bra sizes), assortment that is not 'the same collection everywhere', and a reverse path that actually refunds. International access (Myntra not usable in the EU) is named but thin. Store reviews add 2 claims on this question (Play 0, App Store 2).",
+      "evidence": [
+        {
+          "claim_id": "t3_1unu1p2__c2",
+          "quote": "where to find longer palazzos for tall girls that go below ankle, any small business or Insta stores are also fine if you’ve tried them",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1unu1p2/tall_girlies_pls_help_me_find_pants/",
+          "doc_id": "t3_1unu1p2",
+          "theme": "off_platform_research",
+          "opportunity_id": "off_platform_research",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t3_1tp0igu__c1",
+          "quote": "I am scrolling through myntra and stuff but none of the affordable options have enough reviews for me to make a decision.",
+          "url": "https://www.reddit.com/r/TwoXIndia/comments/1tp0igu/affordable_college_purse_recommendation_please/",
+          "doc_id": "t3_1tp0igu",
+          "theme": "review_trust",
+          "opportunity_id": "review_thinness",
+          "source": "reddit"
+        },
+        {
+          "claim_id": "t1_oquls2f__c1",
+          "quote": "Received different colored New balance worth ₹16k when I created return request, original item images changed on page.",
+          "url": "https://www.reddit.com/r/Flipkart/comments/1u1wnjw/flipkart_is_a_scam/oquls2f/",
+          "doc_id": "t1_oquls2f",
+          "theme": "quality_doubt",
+          "opportunity_id": "quality_uncertainty",
+          "source": "reddit"
+        }
+      ]
+    }
+  ]
+}

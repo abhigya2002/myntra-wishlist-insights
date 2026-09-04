@@ -1,0 +1,83 @@
+[
+  {
+    "id": "quality_uncertainty",
+    "title": "Quality and authenticity doubt after shortlisting",
+    "reddit_claims": 27,
+    "play_claims": 26,
+    "app_claims": 83,
+    "store_claims": 109,
+    "verdict": "corroborates"
+  },
+  {
+    "id": "returns_and_order_trust",
+    "title": "Return and order-integrity distrust that trains delay",
+    "reddit_claims": 25,
+    "play_claims": 27,
+    "app_claims": 72,
+    "store_claims": 99,
+    "verdict": "corroborates"
+  },
+  {
+    "id": "review_thinness",
+    "title": "Thin or conflicting reviews after a product is identified",
+    "reddit_claims": 18,
+    "play_claims": 0,
+    "app_claims": 7,
+    "store_claims": 7,
+    "verdict": "corroborates"
+  },
+  {
+    "id": "fit_size_uncertainty",
+    "title": "Fit and size uncertainty after the item is chosen",
+    "reddit_claims": 9,
+    "play_claims": 0,
+    "app_claims": 22,
+    "store_claims": 22,
+    "verdict": "corroborates"
+  },
+  {
+    "id": "price_watch_and_checkout",
+    "title": "Price surprise and cross-platform price gaps",
+    "reddit_claims": 9,
+    "play_claims": 2,
+    "app_claims": 5,
+    "store_claims": 7,
+    "verdict": "corroborates"
+  },
+  {
+    "id": "assortment_or_access_gap",
+    "title": "Catalog miss: scrolled Myntra and still could not find the item",
+    "reddit_claims": 14,
+    "play_claims": 0,
+    "app_claims": 2,
+    "store_claims": 2,
+    "verdict": "thin_store"
+  },
+  {
+    "id": "occasion_and_styling_uncertainty",
+    "title": "Occasion and styling uncertainty before committing",
+    "reddit_claims": 10,
+    "play_claims": 0,
+    "app_claims": 0,
+    "store_claims": 0,
+    "verdict": "reddit_only"
+  },
+  {
+    "id": "off_platform_research",
+    "title": "Leaving Myntra to ask Reddit, Instagram, or other sites",
+    "reddit_claims": 6,
+    "play_claims": 0,
+    "app_claims": 0,
+    "store_claims": 0,
+    "verdict": "reddit_only"
+  },
+  {
+    "id": "cross_listing_compare",
+    "title": "Comparing the same shortlist across marketplaces",
+    "reddit_claims": 2,
+    "play_claims": 0,
+    "app_claims": 0,
+    "store_claims": 0,
+    "verdict": "reddit_only"
+  }
+]

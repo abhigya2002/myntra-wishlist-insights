@@ -1,0 +1,131 @@
+{
+  "phase": 4,
+  "product": "Myntra",
+  "draft": "reddit_primary_store_corroboration",
+  "ran_at": "2026-08-30T19:13:23Z",
+  "ingest": {
+    "play": 143,
+    "app_store": 418,
+    "pulled_at": "2026-08-30T19:03:29Z"
+  },
+  "corpus": {
+    "raw_docs": 887,
+    "labeled_docs": 887,
+    "in_scope_docs": 852,
+    "by_label": {
+      "noise": 35,
+      "myntra_primary": 842,
+      "fashion_context": 10
+    },
+    "by_source_docs": {
+      "reddit": 326,
+      "play_store": 143,
+      "app_store": 418
+    },
+    "by_source_claims": {
+      "reddit": 124,
+      "play_store": 55,
+      "app_store": 191
+    },
+    "claims_total": 370,
+    "claims_clustered": 366,
+    "claims_unclustered": 4,
+    "claim_docs": 284,
+    "reddit_claim_count": 124,
+    "store_claim_count": 246,
+    "reddit_claim_share": 0.3351,
+    "reddit_share": 0.3351,
+    "wishlist_explicit_claims": 0,
+    "wishlist_implied_claims": 0,
+    "extractor": {
+      "groq": 63,
+      "heuristic": 307
+    },
+    "gate_on_claims": {
+      "myntra_primary": 360,
+      "fashion_context": 10
+    }
+  },
+  "ranked_areas": 9,
+  "ranking": [
+    {
+      "rank": 1,
+      "id": "quality_uncertainty",
+      "score": 93.572,
+      "reddit": 27,
+      "store": 109
+    },
+    {
+      "rank": 2,
+      "id": "fit_size_uncertainty",
+      "score": 89.22,
+      "reddit": 9,
+      "store": 22
+    },
+    {
+      "rank": 3,
+      "id": "returns_and_order_trust",
+      "score": 83.531,
+      "reddit": 25,
+      "store": 99
+    },
+    {
+      "rank": 4,
+      "id": "review_thinness",
+      "score": 77.6775,
+      "reddit": 18,
+      "store": 7
+    },
+    {
+      "rank": 5,
+      "id": "off_platform_research",
+      "score": 69.5515,
+      "reddit": 6,
+      "store": 0
+    },
+    {
+      "rank": 6,
+      "id": "price_watch_and_checkout",
+      "score": 68.9605,
+      "reddit": 9,
+      "store": 7
+    },
+    {
+      "rank": 7,
+      "id": "assortment_or_access_gap",
+      "score": 66.798,
+      "reddit": 14,
+      "store": 2
+    },
+    {
+      "rank": 8,
+      "id": "occasion_and_styling_uncertainty",
+      "score": 63.52,
+      "reddit": 10,
+      "store": 0
+    },
+    {
+      "rank": 9,
+      "id": "cross_listing_compare",
+      "score": 54.2475,
+      "reddit": 2,
+      "store": 0
+    }
+  ],
+  "question_coverage": {
+    "answered": 6,
+    "partial": 2,
+    "gap": 2,
+    "answered_or_partial": 8,
+    "pass_8_of_10": true,
+    "gaps_named": true
+  },
+  "instant_fail_clear": true,
+  "files": {
+    "report": "D:\\Fashion Project\\Phases\\Phase4_StoreReviews\\output\\discovery-report.md",
+    "ledger": "D:\\Fashion Project\\Phases\\Phase4_StoreReviews\\output\\evidence-ledger.json",
+    "store_raw": "D:\\Fashion Project\\Phases\\Phase4_StoreReviews\\data\\raw\\store_reviews.jsonl",
+    "store_claims": "D:\\Fashion Project\\Phases\\Phase4_StoreReviews\\data\\claims\\store_claims.jsonl"
+  },
+  "re_run": "python run.py"
+}
